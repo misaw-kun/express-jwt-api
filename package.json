@@ -1,0 +1,20 @@
+{
+  "name": "mern-rtk-starter",
+  "version": "1.0.0",
+  "description": "template for spinning up a mern + redux toolkit project 📦",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "keywords": [
+    "mern",
+    "rtk",
+    "redux"
+  ],
+  "author": "wasim",
+  "license": "ISC"
+}
