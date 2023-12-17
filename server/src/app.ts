@@ -3,12 +3,13 @@ import config from 'config';
 import connect from './utils/connect';
 import log from './utils/logger';
 import routes from './routes';
+import deserializeUser from './middleware/deserializeUser';
 
-const app = express();
+export const app = express();
+const PORT = config.get<number>('port');
 
 app.use(express.json());
-
-const PORT = config.get<number>('port');
+app.use(deserializeUser);
 
 app.listen(PORT, async () => {
   log.info(`Server is running @ port ${PORT}`);

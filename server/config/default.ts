@@ -1,5 +1,43 @@
 export default {
   port: 1337,
   dbUri: "mongodb://localhost:27017/mern-rtk-starter",
-  saltWorkFactor: 10
+  saltWorkFactor: 10,
+  accessTokenTTL: '15m',
+  refreshTokenTTL: '1y',
+  privateKey: `-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAg/wGrQg9awu3vN8xZEKwf+aZwwxg8IGjsGuYMVsnIBqIueP7
+rqSk4wS2U4KU3aNoMng3+cKlNQYaNk+jwZHxKrsjXNRGUzRMa2TSdF77RcRZwKAK
+Onkd/nF5wRNlfbYNx+G1Mir+DEiy/de8fkMgoIpbJ8bpEhfAzJBdLVt2pfwAdIQ3
+UQP1UuCnc0sk3rpaymQr4cfhSMEFpAEcHkQnPRmTOjLG7YtPZr+PGHDsP/nF4ZZ+
+SYne9tZeZfYV3kHl7x+noTU/GGon4T9cA7/HYVgjiJshMQIJHa7GmndS5nofyv2x
+j3dPEW6JI1lbN8XgjY1uMvljChBp1eU8gv2TGwIDAQABAoIBABl5yigYERLafiq8
+wiHiJYNqlX9qokOKInhpLEVKnPC7bmzDLs91BEa1oCPabrWhVvl27wcMpSro9KJL
+GQbCDtT6rka6yqBA1gdcvKqtsr6yuchOm+rRehKlAKVeAxcSzvIoBPucBNGGLtaE
+j+OnPWL/kbzJzi8p2pMhwnqAzxQWm2GchgQ9HBaHoRGQ9BquWSNDlbfBGdyLx2Ju
+FF2euNZjp5a6t8P/cubJEKZna4uh0bi6kSFngULF8tBAqevdeIuSyGw0E5oajlzF
+PuAbQwXicVGbXBZ+Opc9Mr3dHLaeS5mEtNppwhuWExYNG2se5wzo1R1cM9TD/e09
+Q8vM+9ECgYEAuJcws1bvcN45EPAgFAxkJ5qP0/4F2mOBFHOsXyEecXLBMPZhUz+q
+GPKqWWV38PM4sb+2OvSLJY3l1EGmWUpaW0TcaUF0MRdZF0fpT6IdWKM2Uywn4Vqw
++m6BoIpLuwte5pkLNCgg4BtUQ9Q+XP7nM0Uugx9G6YUXZQaRmps1/Q0CgYEAtwsG
+DiQHemKHIrtOPpr/ynzWYzxhTRXJJsXF42exs5USM6vUuGPePWkItvG/L3MtXEl0
+PWxgVbdQWcVei/UYd3/mUJFI2ZYXAVA0/O7tcvgkgFepFhxzwyuEiHmmN/pKp6c8
+TrbRGbxXk2Gjhgyf+o1NBzPjV/JWgBw0Kbcx1scCgYBXdHpEXanv5blPxxTLqttA
+0D/Yhn+ran1bfTprj7tmsKHLWs/dq0ohq8b9t89Nv05bGKNz5yyNzF7ZY4k2wL1y
+hHuQ+svb/l3dY9qsOfiBaEJywXbblCZJYFXWA+/BXK/HvTbLrT92LjyMLmClmrdb
+WSmiQg1M0hu1Z5lQkLzReQKBgQCpe7GNolqyPUy3Igue+FHkIZc4p43InGV2WyWS
+HE9z4pHJ+k6qtP3wirKhAlJuEw1rKDBTN2gztdrWZGPY34ZaD7kn3H5ByjFe6+9E
+S87c51qU45YSfSHLEx5SZ6E6r6w0dCrpD2mplLTaKEwLMOFoUzGBe9ADfMYPNQ4v
+mgqxvQKBgQCqEfdkNinxxi6hwc3sVd4f2F9pvMEoH5iWDKe8OggZimB8i0eEYyYd
+UyukNPZvSWZZW7cLLqWHe0SijRUW1cgrcEeIPKfUXDzLwVGb+Jv1yFd23FECXftJ
+wkSceHSoZHpmAmFAwm45OJW6gjCxSpc7lZF4ydstY2gjtK3A1EWXow==
+-----END RSA PRIVATE KEY-----`,
+  publicKey: `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg/wGrQg9awu3vN8xZEKw
+f+aZwwxg8IGjsGuYMVsnIBqIueP7rqSk4wS2U4KU3aNoMng3+cKlNQYaNk+jwZHx
+KrsjXNRGUzRMa2TSdF77RcRZwKAKOnkd/nF5wRNlfbYNx+G1Mir+DEiy/de8fkMg
+oIpbJ8bpEhfAzJBdLVt2pfwAdIQ3UQP1UuCnc0sk3rpaymQr4cfhSMEFpAEcHkQn
+PRmTOjLG7YtPZr+PGHDsP/nF4ZZ+SYne9tZeZfYV3kHl7x+noTU/GGon4T9cA7/H
+YVgjiJshMQIJHa7GmndS5nofyv2xj3dPEW6JI1lbN8XgjY1uMvljChBp1eU8gv2T
+GwIDAQAB
+-----END PUBLIC KEY-----`
 }

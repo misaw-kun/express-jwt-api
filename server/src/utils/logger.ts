@@ -9,7 +9,7 @@ const stream = pretty({
 })
 
 const log = pino({
-  timestamp: () => `,"time":"${dayjs().format()}"`,
+  timestamp: () => `,"time":"${dayjs().format('DD/MM->HH:mm:ss')}"`,
 }, stream);
 
 export default log;
